@@ -1,0 +1,45 @@
+ /* Selector  Universal */
+ * {
+    color: olive;
+    background-color: darkgrey;
+}
+
+/* Selector Tipo de Elemento 
+    se puede utilizar en todos lo tipos de elementos*/
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* Selector de Clase */
+.clase1 {
+    color: black;
+}
+
+/* Selector por Id */
+#idtitulogrande {
+    color: green;
+}
+
+/* Selector por Atributo */
+a[href] {
+    color: brown;
+}
+
+a[href*=".ec"] {
+    color: purple;
+}
+
+/* Selector de Pseudoclase */
+
+/*
+label:hover {
+    color: deeppink;
+    font-style: italic;
+    font-size: 50px;
+    background-color: skyblue;
+}
+*/
