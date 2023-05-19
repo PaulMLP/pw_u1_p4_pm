@@ -1,0 +1,56 @@
+.menu li {
+    list-style: none;
+    display: inline-block;
+    border: 2px outset rgb(116, 157, 183);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center
+}
+
+.cabecera h1 {
+    font-size: 40px;
+    font-family: 'system-ui';
+    text-align: center;
+    color: rgb(5, 80, 156);
+}
+
+.menu {
+    background-color: rgb(20, 129, 115);
+    text-align: center;
+}
+
+/* diplay explicito de estructuras principales */
+header,
+section,
+footer,
+aside,
+nav,
+article {
+    display: block;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(113, 196, 168);
+}
+
+.formulario {
+    width: 900px;
+    border: 1px double black;
+    margin: 15px auto;
+    font-family: 'system-ui';
+}
+
+.seccion{
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+
+article{
+    border: 3px outset black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: rgb(42, 144, 162);
+}
