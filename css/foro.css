@@ -1,7 +1,7 @@
 .menu li {
     list-style: none;
     display: inline-block;
-    border: 2px outset rgb(116, 157, 183);
+    border: 2px outset rgb(195, 93, 25);
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
@@ -12,11 +12,11 @@
     font-size: 40px;
     font-family: 'system-ui';
     text-align: center;
-    color: rgb(5, 80, 156);
+    color: rgb(14, 55, 109);
 }
 
 .menu {
-    background-color: rgb(20, 129, 115);
+    background-color: rgb(132, 121, 110);
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ article {
 
 body {
     text-align: center;
-    background-color: rgb(113, 196, 168);
+    background-color: rgb(112, 198, 235);
 }
 
 .formulario {
@@ -42,15 +42,37 @@ body {
     font-family: 'system-ui';
 }
 
-.seccion{
+.seccion {
     margin: 20px;
     width: 600px;
     float: left;
 }
 
-article{
-    border: 3px outset black;
+article {
+    border: 3px outset rgb(195, 93, 25);
     padding: 20px;
     margin-bottom: 25px;
     background-color: rgb(42, 144, 162);
+}
+
+.referencias {
+    border: outset 3px rgb(195, 93, 25);
+    float: left;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+article footer {
+    text-align: right;
+    color: rgb(214, 101, 20);
+}
+
+.pie {
+    clear: both;
+}
+
+article img {
+    height: 200px;
+    width: 350px;
 }
