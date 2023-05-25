@@ -6,6 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+
+    <script>
+        function convertir(idCampo) {
+            return parseInt(document.getElementById(idCampo).value);
+        }
+
+        function sumar(num1, num2) {
+            return num1 + num2;
+        }
+
+        function sumarNumeros() {
+            document.getElementById('labelResultado').innerHTML = "Resultado " + sumar(convertir('idNum1'), convertir('idNum2'));
+        }
+
+        function restarNumeros() {
+            document.getElementById('labelResultado').innerHTML = "Resultado " + (convertir('idNum1') - convertir('idNum2'));
+        }
+
+        function multiplicarNumeros() {
+            document.getElementById('labelResultado').innerHTML = "Resultado " + (convertir('idNum1') * convertir('idNum2'));
+        }
+
+        function dividirNumeros() {
+            document.getElementById('labelResultado').innerHTML =
+                "Resultado " + (convertir('idNum2') != 0 ? (convertir('idNum1') / convertir('idNum2')) : 'indefinido');
+        }
+    </script>
+
 </head>
 
 <body>
@@ -17,12 +45,15 @@
         <label for="idNum2">Número 2</label>
         <input id="idNum2" type="number">
 
-        <button onclick="document.getElementById('labelResultado').innerHTML='Cambio texto'">Sumar</button>
-        <button>Restar</button>
-        <button>Multiplicar</button>
-        <button>Dividir</button>
+        <button onclick="document.getElementById('labelResultado').style.backgroundColor='red'">JS Online</button>
+        <button onclick="document.getElementById('labelResultado').innerHTML ='red'">JS Online2</button>
 
+        <button onclick="sumarNumeros()">Sumar</button>
+        <button onclick="restarNumeros()">Restar</button>
+        <button onclick="multiplicarNumeros()">Multiplicar</button>
+        <button onclick="dividirNumeros()">Dividir</button>
         <label id="labelResultado" for="">Resultado: </label>
+        
     </section>
     <footer></footer>
 </body>
