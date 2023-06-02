@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(204, 157, 103);
+}
+
+.form {
+    width: 340px;
+    height: 470px;
+    background-color: rgb(255, 197, 129);
+    box-shadow: 3px 3px 2px rgb(75, 57, 38), 20px 20px 60px rgb(127, 98, 64), 20px 20px 80px rgb(127, 98, 64);
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-family: Tahoma;
+}
+
+h2 {
+    margin: 10px 0px 40px 0px;
+    padding-bottom: 3px;
+    width: 220px;
+    color: rgb(75, 57, 38);
+    border-bottom: 3px solid rgb(75, 57, 38);
+}
+
+p::before {
+    display: block;
+    content: attr(type);
+    margin: 5px 2px;
+    font-size: 15px;
+    color: rgb(112, 66, 5);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(75, 62, 42);
+    background: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #c3894780;
+}
+
+.form button {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background: rgb(204, 157, 103);
+    font-size: 17px;
+    padding: 5px 10px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px rgb(127, 98, 64);
+    backdrop-filter: blur(5px);
+}
+
+.form button:hover{
+    background: rgb(127, 98, 64);
+    color: rgb(255, 212, 128);
+}
